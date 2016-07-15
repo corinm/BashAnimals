@@ -45,12 +45,14 @@ din6="${OR}        -------|_|--|_|         ${NC}\n"
 din="$din1$din2$din3$din4$din5$din6"
 
 # DUCK #####################################################################
-duc1="                    (@${OR}_${NC}    \n"
-duc2="                  \\\\\\_\\     ${GR}V${NC}\n"
-duc3="             ${BL}~~~~${NC}(____)${BL}~~~~${NC}${GR}|${NC}${BL}~~~${NC}\n"
-duc="$duc1$duc2$duc3"
 
-# Generate random numbe between 1 and 2
+duc1="                __           \n"
+duc2="            ___( o)${OR}>${NC}         \n"
+duc3="            \ <_. )    ${GR}V${NC}     \n"
+duc4="        ${BL}~~~~~${NC}\`---'${BL}~~~~~${GR}|${BL}~~~${NC}\n"
+duc="$duc1$duc2$duc3$duc4"
+
+# Generate random number between 1 and 2
 RAND=$((((RANDOM + RANDOM) % 3) + 1))
 
 case "$RAND" in
