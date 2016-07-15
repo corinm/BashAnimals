@@ -1,4 +1,7 @@
-export PS1="corin$ "
+# Greeting on bash login
+echo ""
+echo -n "User: "; whoami
+echo -n "Date: "; date "+%A %d %B %Y - %l:%M%p"
 
 alias ll='ls -lahG'
 
