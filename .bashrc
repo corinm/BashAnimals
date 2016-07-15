@@ -16,7 +16,7 @@ echo ""
 
 # LIZARD ####################################################################
 # Adapted from: http://chris.com/ascii/index.php?art=animals/reptiles/lizards - Glo Pearl
-liz1="${GR}          ${YL}O${GR}--${YL}O${GR}¯¯¯¯¯¯¯¯¯¯¯¯\________${NC}\n"
+liz1="${GR}          ${YL}O${GR}--${YL}O${GR}^^^^^^^^^^^^\________${NC}\n"
 liz2="${GR}          \__/||-------||---------~${NC}\n"
 liz="$liz1$liz2"
 
@@ -66,7 +66,7 @@ squ8="${OR}                 \`\`'\"\`  ${NC}\n"
 squ="$squ1$squ2$squ3$squ4$squ5$squ6$squ7$squ8"
 
 # Generate random number
-RAND=$((((RANDOM + RANDOM) % 5) + 1))
+RAND=$((((RANDOM + RANDOM) % 4) + 1))
 
 case "$RAND" in
   1) echo -e "$liz"
@@ -77,8 +77,8 @@ case "$RAND" in
     ;;
   4) echo -e "$pea"
     ;;
-  5) echo -e "$squ"
-    ;;
+#  5) echo -e "$squ"
+#    ;;
   *)
     ;;
 esac
