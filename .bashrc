@@ -1,19 +1,3 @@
-# Greeting on bash login
-echo ""
-echo -n "User: "; whoami
-echo -n "Date: "; date "+%A %d %B %Y - %l:%M%p"
-
-alias ll='ls -lahG'
-
-if [ -f ~/.git-completion.bash ]; then
-  source ~/.git-completion.bash
-fi
-
-if [ -f ~/.git-prompt.sh ]; then
-  source ~/.git-prompt.sh
-  export PS1='\W$(__git_ps1 "(%s)") > '
-fi
-
 # ===========
 # COOL ANIMAL
 # ===========
@@ -31,11 +15,13 @@ NC='\x1B[0m' # No Color
 echo ""
 
 # LIZARD ####################################################################
+# Adapted from: http://chris.com/ascii/index.php?art=animals/reptiles/lizards - Glo Pearl
 liz1="${GR}          ${YL}O${GR}--${YL}O${GR}¯¯¯¯¯¯¯¯¯¯¯¯\________${NC}\n"
 liz2="${GR}          \__/||-------||---------~${NC}\n"
 liz="$liz1$liz2"
 
 # DINOSAUR ##################################################################
+# Adapted from: http://chris.com/ascii/index.php?art=animals/reptiles/dinosaurs
 din1="${OR}                             __ ${NC}\n"
 din2="${OR}                           / ${LBL}°${OR}_)${NC}\n"
 din3="${OR}                _.----. _ /  /  ${NC}\n"
@@ -45,7 +31,7 @@ din6="${OR}        -------|_|--|_|         ${NC}\n"
 din="$din1$din2$din3$din4$din5$din6"
 
 # DUCK #####################################################################
-
+# Adapted from: http://textart.io/art/tag/duck
 duc1="                __           \n"
 duc2="            ___( o)${OR}>${NC}         \n"
 duc3="            \ <_. )    ${GR}V${NC}     \n"
@@ -65,12 +51,3 @@ case "$RAND" in
   *)
     ;;
 esac
-
-# ====
-# DATE
-# ====
-
-echo ""
-date +'%a %d %b - %I:%M%p'
-echo ""
-
