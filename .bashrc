@@ -61,8 +61,6 @@ case "$RAND" in
     ;;
 esac
 
-echo ""
-
 # ====
 # DATE
 # ====
